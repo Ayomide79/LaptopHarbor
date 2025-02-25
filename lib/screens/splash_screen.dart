@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:latop_main/notification_views/notification_screen.dart';
 import 'package:latop_main/orders_views/order_empty.dart';
+import 'package:latop_main/profile_views/profile_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(Duration(seconds: 4), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => EmptyOrdersScreen()));
+          context, MaterialPageRoute(builder: (context) => ProfilePage()));
     });
   }
 
